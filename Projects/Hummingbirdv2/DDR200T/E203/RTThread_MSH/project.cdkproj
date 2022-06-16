@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Name="project" Version="1" Language="C" Type="Simple">
+  <Description/>
+  <Dependencies Name="Debug"/>
+  <VendorInfo>
+    <VendorName>new_psf_project_Nuclei-SDK(V0.1.3)_hbirdv2_DDR200T_E203_RTThread_msh</VendorName>
+  </VendorInfo>
+  <VirtualDirectory Name="application">
+    <File Name="../../../../../application/rtthread/msh/main.c">
+      <FileOption/>
+    </File>
+    <File Name="../../../../../application/rtthread/msh/rtconfig.h">
+      <FileOption/>
+    </File>
+  </VirtualDirectory>
+  <VirtualDirectory Name="hbird_sdk">
+    <VirtualDirectory Name="NMSIS">
+      <VirtualDirectory Name="Core">
+        <VirtualDirectory Name="Include">
+          <File Name="../../../../../NMSIS/Core/Include/core_compatiable.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/core_feature_base.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/core_feature_fpu.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/core_feature_plic.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/core_feature_timer.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/nmsis_compiler.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/nmsis_core.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/nmsis_gcc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/nmsis_version.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/riscv_bits.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../NMSIS/Core/Include/riscv_encoding.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="SoC">
+      <VirtualDirectory Name="hbirdv2">
+        <VirtualDirectory Name="Board">
+          <VirtualDirectory Name="ddr200t">
+            <VirtualDirectory Name="Include">
+              <File Name="../../../../../SoC/hbirdv2/Board/ddr200t/Include/board_ddr200t.h">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Board/ddr200t/Include/hbird_sdk_hal.h">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+            <File Name="../../../../../SoC/hbirdv2/Board/ddr200t/openocd_hbirdv2.cfg">
+              <FileOption/>
+            </File>
+            <VirtualDirectory Name="Source">
+              <VirtualDirectory Name="GCC">
+                <File Name="../../../../../SoC/hbirdv2/Board/ddr200t/Source/GCC/gcc_hbirdv2_flash.ld">
+                  <FileOption/>
+                </File>
+                <File Name="../../../../../SoC/hbirdv2/Board/ddr200t/Source/GCC/gcc_hbirdv2_flashxip.ld">
+                  <FileOption/>
+                </File>
+                <File Name="../../../../../SoC/hbirdv2/Board/ddr200t/Source/GCC/gcc_hbirdv2_ilm.ld">
+                  <FileOption/>
+                </File>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="Common">
+          <VirtualDirectory Name="Source">
+            <VirtualDirectory Name="Drivers">
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Drivers/hbirdv2_gpio.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Drivers/hbirdv2_i2c.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Drivers/hbirdv2_pwm.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Drivers/hbirdv2_spi.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Drivers/hbirdv2_uart.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Drivers/htif.c">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+            <VirtualDirectory Name="GCC">
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/GCC/intexc_hbirdv2.S">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/GCC/startup_hbirdv2.S">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+            <File Name="../../../../../SoC/hbirdv2/Common/Source/hbirdv2_common.c">
+              <FileOption/>
+            </File>
+            <VirtualDirectory Name="Stubs">
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/clock_getres.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/clock_gettime.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/clock_settime.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/close.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/execve.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/exit.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/fork.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/fstat.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/getpid.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/gettimeofday.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/isatty.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/kill.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/link.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/lseek.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/open.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/read.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/sbrk.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/stat.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/times.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/unlink.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/wait.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../SoC/hbirdv2/Common/Source/Stubs/write.c">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+            <File Name="../../../../../SoC/hbirdv2/Common/Source/system_hbirdv2.c">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Include">
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbirdv2.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbirdv2_gpio.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbirdv2_i2c.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbirdv2_pwm.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbirdv2_spi.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbirdv2_uart.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/hbird_sdk_soc.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/htif.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/riscv_atomic.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../SoC/hbirdv2/Common/Include/system_hbirdv2.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="OS">
+      <VirtualDirectory Name="RTThread">
+        <VirtualDirectory Name="components">
+          <VirtualDirectory Name="finsh">
+            <File Name="../../../../../OS/RTThread/components/finsh/cmd.c">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/components/finsh/finsh.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/components/finsh/finsh_api.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/components/finsh/msh.c">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/components/finsh/msh.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/components/finsh/shell.c">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/components/finsh/shell.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="include">
+          <VirtualDirectory Name="libc">
+            <File Name="../../../../../OS/RTThread/include/libc/libc_dirent.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/include/libc/libc_errno.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/include/libc/libc_fcntl.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/include/libc/libc_fdset.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/include/libc/libc_ioctl.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/include/libc/libc_signal.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../OS/RTThread/include/libc/libc_stat.h">
+              <FileOption/>
+            </File>
+          </VirtualDirectory>
+          <File Name="../../../../../OS/RTThread/include/rtdbg.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rtdebug.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rtdef.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rthw.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rtlibc.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rtm.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rtservice.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/include/rtthread.h">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+        <VirtualDirectory Name="libcpu">
+          <VirtualDirectory Name="risc-v">
+            <VirtualDirectory Name="nuclei">
+              <File Name="../../../../../OS/RTThread/libcpu/risc-v/nuclei/context_gcc.S">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../OS/RTThread/libcpu/risc-v/nuclei/cpuport.c">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../OS/RTThread/libcpu/risc-v/nuclei/cpuport.h">
+                <FileOption/>
+              </File>
+              <File Name="../../../../../OS/RTThread/libcpu/risc-v/nuclei/interrupt_gcc.S">
+                <FileOption/>
+              </File>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="src">
+          <File Name="../../../../../OS/RTThread/src/clock.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/components.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/cpu.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/idle.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/ipc.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/irq.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/kservice.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/mem.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/memheap.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/mempool.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/object.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/scheduler.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/slab.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/thread.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../OS/RTThread/src/timer.c">
+            <FileOption/>
+          </File>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Dependencies Name="Link_ILM"/>
+  <DebugSessions>
+    <watchExpressions/>
+    <memoryExpressions/>
+    <statistics/>
+    <peripheralTabs/>
+    <WatchDisplayFormat/>
+    <LocalDisplayFormat/>
+    <debugLayout/>
+    <memoryTabColSizeExpressions/>
+  </DebugSessions>
+  <BuildConfigs>
+    <BuildConfig Name="Link_ILM">
+      <Target>
+        <ROMBank Selected="1">
+          <ROM1>
+            <InUse>no</InUse>
+            <Start>0x0</Start>
+            <Size>0x20000</Size>
+          </ROM1>
+          <ROM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM2>
+          <ROM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM3>
+          <ROM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM4>
+          <ROM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM5>
+        </ROMBank>
+        <RAMBank>
+          <RAM1>
+            <InUse>yes</InUse>
+            <Start>0x20000000</Start>
+            <Size>0x80000</Size>
+            <Init>yes</Init>
+          </RAM1>
+          <RAM2>
+            <InUse>no</InUse>
+            <Start>0x50000000</Start>
+            <Size>0x800000</Size>
+            <Init>yes</Init>
+          </RAM2>
+          <RAM3>
+            <InUse>no</InUse>
+            <Start>0x60000000</Start>
+            <Size>0x20000</Size>
+            <Init>yes</Init>
+          </RAM3>
+          <RAM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM4>
+          <RAM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM5>
+        </RAMBank>
+        <CPU>e203</CPU>
+        <UseMiniLib>yes</UseMiniLib>
+        <Endian>little</Endian>
+        <UseHardFloat>no</UseHardFloat>
+        <UseEnhancedLRW>no</UseEnhancedLRW>
+        <UseContinueBuild>no</UseContinueBuild>
+        <UseSemiHost>no</UseSemiHost>
+      </Target>
+      <Output>
+        <OutputName>$(ProjectName)</OutputName>
+        <Type>Executable</Type>
+        <CreateHexFile>no</CreateHexFile>
+        <CreateBinFile>no</CreateBinFile>
+        <Preprocessor>no</Preprocessor>
+        <Disassmeble>yes</Disassmeble>
+        <CallGraph>no</CallGraph>
+        <Map>no</Map>
+      </Output>
+      <User>
+        <BeforeCompile>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeCompile>
+        <BeforeMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeMake>
+        <AfterMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </AfterMake>
+        <Tools/>
+      </User>
+      <Compiler>
+        <Define>__IDE_RV_CORE=e203;SOC_HBIRD;DOWNLOAD_MODE=DOWNLOAD_MODE_ILM;DOWNLOAD_MODE_STRING=\"ILM\";BOARD_DDR200T;RTOS_RTTHREAD</Define>
+        <Undefine/>
+        <Optim>None (-O0)</Optim>
+        <DebugLevel>Default (-g)</DebugLevel>
+        <IncludePath>$(ProjectPath)/../../../../../OS/RTThread/components/finsh;$(ProjectPath)/../../../../../OS/RTThread/include;$(ProjectPath)/../../../../../OS/RTThread/include/libc;$(ProjectPath)/../../../../../OS/RTThread/libcpu/risc-v/nuclei;$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Include;$(ProjectPath)/../../../../../SoC/hbirdv2/Common/Include;../../../../../NMSIS/Core/Include;../../../../../application/rtthread/msh</IncludePath>
+        <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -std=gnu11</OtherFlags>
+        <Verbose>no</Verbose>
+        <Ansi>no</Ansi>
+        <Syntax>no</Syntax>
+        <Pedantic>no</Pedantic>
+        <PedanticErr>no</PedanticErr>
+        <InhibitWarn>no</InhibitWarn>
+        <AllWarn>yes</AllWarn>
+        <WarnErr>no</WarnErr>
+        <OneElfS>yes</OneElfS>
+        <OneElfSPerData>yes</OneElfSPerData>
+        <Fstrict>no</Fstrict>
+      </Compiler>
+      <Asm>
+        <Define>__IDE_RV_CORE=e203;SOC_HBIRD;DOWNLOAD_MODE=DOWNLOAD_MODE_ILM;DOWNLOAD_MODE_STRING="ILM";BOARD_DDR200T;RTOS_RTTHREAD</Define>
+        <Undefine/>
+        <IncludePath>$(ProjectPath)/../../../../../OS/RTThread/components/finsh;$(ProjectPath)/../../../../../OS/RTThread/include;$(ProjectPath)/../../../../../OS/RTThread/include/libc;$(ProjectPath)/../../../../../OS/RTThread/libcpu/risc-v/nuclei;$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Include;$(ProjectPath)/../../../../../SoC/hbirdv2/Common/Include;../../../../../NMSIS/Core/Include;../../../../../application/rtthread/msh</IncludePath>
+        <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -std=gnu11</OtherFlags>
+        <DebugLevel>gdwarf2</DebugLevel>
+      </Asm>
+      <Linker>
+        <Garbage>yes</Garbage>
+        <Garbage2>yes</Garbage2>
+        <LDFile>$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Source/GCC/gcc_hbirdv2_ilm.ld</LDFile>
+        <LibName>stdc++</LibName>
+        <LibPath/>
+        <OtherFlags>-nostartfiles -Xlinker  --gc-sections --specs=nano.specs --specs=nosys.specs -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek</OtherFlags>
+        <AutoLDFile>no</AutoLDFile>
+        <LinkType/>
+        <IncludeAllLibs>no</IncludeAllLibs>
+      </Linker>
+      <Debug>
+        <LoadApplicationAtStartup>yes</LoadApplicationAtStartup>
+        <Connector>OpenOCD</Connector>
+        <StopAt>yes</StopAt>
+        <StopAtText>main</StopAtText>
+        <InitFile>$(ProjectPath)/gdb.init</InitFile>
+        <AfterLoadFile/>
+        <AutoRun>yes</AutoRun>
+        <ResetType>Hard Reset</ResetType>
+        <SoftResetVal>0</SoftResetVal>
+        <ResetAfterLoad>no</ResetAfterLoad>
+        <AfterResetFile/>
+        <Dumpcore>no</Dumpcore>
+        <DumpcoreText/>
+        <ConfigICE>
+          <IP>localhost</IP>
+          <PORT>1025</PORT>
+          <CPUNumber>0</CPUNumber>
+          <Clock>12000</Clock>
+          <Delay>10</Delay>
+          <NResetDelay>100</NResetDelay>
+          <WaitReset>50</WaitReset>
+          <DDC>yes</DDC>
+          <TRST>no</TRST>
+          <DebugPrint>no</DebugPrint>
+          <Connect>Normal</Connect>
+          <ResetType>soft</ResetType>
+          <SoftResetVal>0</SoftResetVal>
+          <RTOSType>None</RTOSType>
+          <DownloadToFlash>no</DownloadToFlash>
+          <ResetAfterConnect>yes</ResetAfterConnect>
+          <GDBName/>
+          <GDBServerType>Local</GDBServerType>
+          <OtherFlags/>
+          <ICEEnablePCSampling>yes</ICEEnablePCSampling>
+          <ICESamplingFreq>1000</ICESamplingFreq>
+          <RemoteICEEnablePCSampling>no</RemoteICEEnablePCSampling>
+          <RemoteICESamplingPort>1026</RemoteICESamplingPort>
+          <Version>latest</Version>
+        </ConfigICE>
+        <ConfigSIM>
+          <SIMTarget/>
+          <OtherFlags/>
+          <NoGraphic>yes</NoGraphic>
+          <Log>no</Log>
+          <SimTrace>no</SimTrace>
+          <Version>latest</Version>
+        </ConfigSIM>
+        <ConfigOpenOCD>
+          <OpenOCDExecutablePath/>
+          <OpenOCDTelnetPortEnable>no</OpenOCDTelnetPortEnable>
+          <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
+          <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
+          <OpenOCDTclPort>6666</OpenOCDTclPort>
+          <OpenOCDConfigOptions>-f ../../../../../SoC/hbirdv2/Board/ddr200t/openocd_hbirdv2.cfg</OpenOCDConfigOptions>
+          <OpenOCDTimeout>5000</OpenOCDTimeout>
+          <PluginID>openocd-nuclei</PluginID>
+          <Version>latest</Version>
+        </ConfigOpenOCD>
+      </Debug>
+      <Flash>
+        <InitFile>$(ProjectPath)/flash.init</InitFile>
+        <Erase>Erase Sectors</Erase>
+        <Algorithms Path=""/>
+        <Program>no</Program>
+        <Verify>no</Verify>
+        <ResetAndRun>no</ResetAndRun>
+        <ResetType>Soft Reset</ResetType>
+        <SoftResetVal/>
+        <External>no</External>
+        <Command/>
+        <Arguments/>
+      </Flash>
+    </BuildConfig>
+    <BuildConfig Name="Link_FLASH">
+      <Target>
+        <ROMBank Selected="1">
+          <ROM1>
+            <InUse>no</InUse>
+            <Start>0x0</Start>
+            <Size>0x20000</Size>
+          </ROM1>
+          <ROM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM2>
+          <ROM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM3>
+          <ROM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM4>
+          <ROM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM5>
+        </ROMBank>
+        <RAMBank>
+          <RAM1>
+            <InUse>yes</InUse>
+            <Start>0x20000000</Start>
+            <Size>0x80000</Size>
+            <Init>yes</Init>
+          </RAM1>
+          <RAM2>
+            <InUse>no</InUse>
+            <Start>0x50000000</Start>
+            <Size>0x800000</Size>
+            <Init>yes</Init>
+          </RAM2>
+          <RAM3>
+            <InUse>no</InUse>
+            <Start>0x60000000</Start>
+            <Size>0x20000</Size>
+            <Init>yes</Init>
+          </RAM3>
+          <RAM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM4>
+          <RAM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM5>
+        </RAMBank>
+        <CPU>e203</CPU>
+        <UseMiniLib>yes</UseMiniLib>
+        <Endian>little</Endian>
+        <UseHardFloat>no</UseHardFloat>
+        <UseEnhancedLRW>no</UseEnhancedLRW>
+        <UseContinueBuild>no</UseContinueBuild>
+        <UseSemiHost>no</UseSemiHost>
+      </Target>
+      <Output>
+        <OutputName>$(ProjectName)</OutputName>
+        <Type>Executable</Type>
+        <CreateHexFile>no</CreateHexFile>
+        <CreateBinFile>no</CreateBinFile>
+        <Preprocessor>no</Preprocessor>
+        <Disassmeble>yes</Disassmeble>
+        <CallGraph>no</CallGraph>
+        <Map>no</Map>
+      </Output>
+      <User>
+        <BeforeCompile>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeCompile>
+        <BeforeMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeMake>
+        <AfterMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </AfterMake>
+        <Tools/>
+      </User>
+      <Compiler>
+        <Define>__IDE_RV_CORE=e203;SOC_HBIRD;DOWNLOAD_MODE=DOWNLOAD_MODE_FLASH;DOWNLOAD_MODE_STRING=\"FLASH\";BOARD_DDR200T;RTOS_RTTHREAD</Define>
+        <Undefine/>
+        <Optim>None (-O0)</Optim>
+        <DebugLevel>Default (-g)</DebugLevel>
+        <IncludePath>$(ProjectPath)/../../../../../OS/RTThread/components/finsh;$(ProjectPath)/../../../../../OS/RTThread/include;$(ProjectPath)/../../../../../OS/RTThread/include/libc;$(ProjectPath)/../../../../../OS/RTThread/libcpu/risc-v/nuclei;$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Include;$(ProjectPath)/../../../../../SoC/hbirdv2/Common/Include;../../../../../NMSIS/Core/Include;../../../../../application/rtthread/msh</IncludePath>
+        <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -std=gnu11</OtherFlags>
+        <Verbose>no</Verbose>
+        <Ansi>no</Ansi>
+        <Syntax>no</Syntax>
+        <Pedantic>no</Pedantic>
+        <PedanticErr>no</PedanticErr>
+        <InhibitWarn>no</InhibitWarn>
+        <AllWarn>yes</AllWarn>
+        <WarnErr>no</WarnErr>
+        <OneElfS>yes</OneElfS>
+        <OneElfSPerData>yes</OneElfSPerData>
+        <Fstrict>no</Fstrict>
+      </Compiler>
+      <Asm>
+        <Define>__IDE_RV_CORE=e203;SOC_HBIRD;DOWNLOAD_MODE=DOWNLOAD_MODE_FLASH;DOWNLOAD_MODE_STRING="FLASH";BOARD_DDR200T;RTOS_RTTHREAD</Define>
+        <Undefine/>
+        <IncludePath>$(ProjectPath)/../../../../../OS/RTThread/components/finsh;$(ProjectPath)/../../../../../OS/RTThread/include;$(ProjectPath)/../../../../../OS/RTThread/include/libc;$(ProjectPath)/../../../../../OS/RTThread/libcpu/risc-v/nuclei;$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Include;$(ProjectPath)/../../../../../SoC/hbirdv2/Common/Include;../../../../../NMSIS/Core/Include;../../../../../application/rtthread/msh</IncludePath>
+        <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -std=gnu11</OtherFlags>
+        <DebugLevel>gdwarf2</DebugLevel>
+      </Asm>
+      <Linker>
+        <Garbage>yes</Garbage>
+        <Garbage2>yes</Garbage2>
+        <LDFile>$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Source/GCC/gcc_hbirdv2_flash.ld</LDFile>
+        <LibName>stdc++</LibName>
+        <LibPath/>
+        <OtherFlags>-nostartfiles -Xlinker  --gc-sections --specs=nano.specs --specs=nosys.specs -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek</OtherFlags>
+        <AutoLDFile>no</AutoLDFile>
+        <LinkType/>
+        <IncludeAllLibs>no</IncludeAllLibs>
+      </Linker>
+      <Debug>
+        <LoadApplicationAtStartup>yes</LoadApplicationAtStartup>
+        <Connector>OpenOCD</Connector>
+        <StopAt>yes</StopAt>
+        <StopAtText>main</StopAtText>
+        <InitFile>$(ProjectPath)/gdb.init</InitFile>
+        <AfterLoadFile/>
+        <AutoRun>yes</AutoRun>
+        <ResetType>Hard Reset</ResetType>
+        <SoftResetVal>0</SoftResetVal>
+        <ResetAfterLoad>no</ResetAfterLoad>
+        <AfterResetFile/>
+        <Dumpcore>no</Dumpcore>
+        <DumpcoreText/>
+        <ConfigICE>
+          <IP>localhost</IP>
+          <PORT>1025</PORT>
+          <CPUNumber>0</CPUNumber>
+          <Clock>12000</Clock>
+          <Delay>10</Delay>
+          <NResetDelay>100</NResetDelay>
+          <WaitReset>50</WaitReset>
+          <DDC>yes</DDC>
+          <TRST>no</TRST>
+          <DebugPrint>no</DebugPrint>
+          <Connect>Normal</Connect>
+          <ResetType>soft</ResetType>
+          <SoftResetVal>0</SoftResetVal>
+          <RTOSType>None</RTOSType>
+          <DownloadToFlash>no</DownloadToFlash>
+          <ResetAfterConnect>yes</ResetAfterConnect>
+          <GDBName/>
+          <GDBServerType>Local</GDBServerType>
+          <OtherFlags/>
+          <ICEEnablePCSampling>yes</ICEEnablePCSampling>
+          <ICESamplingFreq>1000</ICESamplingFreq>
+          <RemoteICEEnablePCSampling>no</RemoteICEEnablePCSampling>
+          <RemoteICESamplingPort>1026</RemoteICESamplingPort>
+          <Version>latest</Version>
+        </ConfigICE>
+        <ConfigSIM>
+          <SIMTarget/>
+          <OtherFlags/>
+          <NoGraphic>yes</NoGraphic>
+          <Log>no</Log>
+          <SimTrace>no</SimTrace>
+          <Version>latest</Version>
+        </ConfigSIM>
+        <ConfigOpenOCD>
+          <OpenOCDExecutablePath/>
+          <OpenOCDTelnetPortEnable>no</OpenOCDTelnetPortEnable>
+          <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
+          <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
+          <OpenOCDTclPort>6666</OpenOCDTclPort>
+          <OpenOCDConfigOptions>-f ../../../../../SoC/hbirdv2/Board/ddr200t/openocd_hbirdv2.cfg</OpenOCDConfigOptions>
+          <OpenOCDTimeout>5000</OpenOCDTimeout>
+          <PluginID>openocd-nuclei</PluginID>
+          <Version>latest</Version>
+        </ConfigOpenOCD>
+      </Debug>
+      <Flash>
+        <InitFile>$(ProjectPath)/flash.init</InitFile>
+        <Erase>Erase Sectors</Erase>
+        <Algorithms Path=""/>
+        <Program>no</Program>
+        <Verify>no</Verify>
+        <ResetAndRun>no</ResetAndRun>
+        <ResetType>Soft Reset</ResetType>
+        <SoftResetVal/>
+        <External>no</External>
+        <Command/>
+        <Arguments/>
+      </Flash>
+    </BuildConfig>
+    <BuildConfig Name="Link_FLASHXIP">
+      <Target>
+        <ROMBank Selected="1">
+          <ROM1>
+            <InUse>no</InUse>
+            <Start>0x0</Start>
+            <Size>0x20000</Size>
+          </ROM1>
+          <ROM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM2>
+          <ROM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM3>
+          <ROM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM4>
+          <ROM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM5>
+        </ROMBank>
+        <RAMBank>
+          <RAM1>
+            <InUse>yes</InUse>
+            <Start>0x20000000</Start>
+            <Size>0x80000</Size>
+            <Init>yes</Init>
+          </RAM1>
+          <RAM2>
+            <InUse>no</InUse>
+            <Start>0x50000000</Start>
+            <Size>0x800000</Size>
+            <Init>yes</Init>
+          </RAM2>
+          <RAM3>
+            <InUse>no</InUse>
+            <Start>0x60000000</Start>
+            <Size>0x20000</Size>
+            <Init>yes</Init>
+          </RAM3>
+          <RAM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM4>
+          <RAM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM5>
+        </RAMBank>
+        <CPU>e203</CPU>
+        <UseMiniLib>yes</UseMiniLib>
+        <Endian>little</Endian>
+        <UseHardFloat>no</UseHardFloat>
+        <UseEnhancedLRW>no</UseEnhancedLRW>
+        <UseContinueBuild>no</UseContinueBuild>
+        <UseSemiHost>no</UseSemiHost>
+      </Target>
+      <Output>
+        <OutputName>$(ProjectName)</OutputName>
+        <Type>Executable</Type>
+        <CreateHexFile>no</CreateHexFile>
+        <CreateBinFile>no</CreateBinFile>
+        <Preprocessor>no</Preprocessor>
+        <Disassmeble>yes</Disassmeble>
+        <CallGraph>no</CallGraph>
+        <Map>no</Map>
+      </Output>
+      <User>
+        <BeforeCompile>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeCompile>
+        <BeforeMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeMake>
+        <AfterMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </AfterMake>
+        <Tools/>
+      </User>
+      <Compiler>
+        <Define>__IDE_RV_CORE=e203;SOC_HBIRD;DOWNLOAD_MODE=DOWNLOAD_MODE_FLASHXIP;DOWNLOAD_MODE_STRING=\"FLASHXIP\";BOARD_DDR200T;RTOS_RTTHREAD</Define>
+        <Undefine/>
+        <Optim>None (-O0)</Optim>
+        <DebugLevel>Default (-g)</DebugLevel>
+        <IncludePath>$(ProjectPath)/../../../../../OS/RTThread/components/finsh;$(ProjectPath)/../../../../../OS/RTThread/include;$(ProjectPath)/../../../../../OS/RTThread/include/libc;$(ProjectPath)/../../../../../OS/RTThread/libcpu/risc-v/nuclei;$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Include;$(ProjectPath)/../../../../../SoC/hbirdv2/Common/Include;../../../../../NMSIS/Core/Include;../../../../../application/rtthread/msh</IncludePath>
+        <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -std=gnu11</OtherFlags>
+        <Verbose>no</Verbose>
+        <Ansi>no</Ansi>
+        <Syntax>no</Syntax>
+        <Pedantic>no</Pedantic>
+        <PedanticErr>no</PedanticErr>
+        <InhibitWarn>no</InhibitWarn>
+        <AllWarn>yes</AllWarn>
+        <WarnErr>no</WarnErr>
+        <OneElfS>yes</OneElfS>
+        <OneElfSPerData>yes</OneElfSPerData>
+        <Fstrict>no</Fstrict>
+      </Compiler>
+      <Asm>
+        <Define>__IDE_RV_CORE=e203;SOC_HBIRD;DOWNLOAD_MODE=DOWNLOAD_MODE_FLASHXIP;DOWNLOAD_MODE_STRING="FLASHXIP";BOARD_DDR200T;RTOS_RTTHREAD</Define>
+        <Undefine/>
+        <IncludePath>$(ProjectPath)/../../../../../OS/RTThread/components/finsh;$(ProjectPath)/../../../../../OS/RTThread/include;$(ProjectPath)/../../../../../OS/RTThread/include/libc;$(ProjectPath)/../../../../../OS/RTThread/libcpu/risc-v/nuclei;$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Include;$(ProjectPath)/../../../../../SoC/hbirdv2/Common/Include;../../../../../NMSIS/Core/Include;../../../../../application/rtthread/msh</IncludePath>
+        <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -std=gnu11</OtherFlags>
+        <DebugLevel>gdwarf2</DebugLevel>
+      </Asm>
+      <Linker>
+        <Garbage>yes</Garbage>
+        <Garbage2>yes</Garbage2>
+        <LDFile>$(ProjectPath)/../../../../../SoC/hbirdv2/Board/ddr200t/Source/GCC/gcc_hbirdv2_flashxip.ld</LDFile>
+        <LibName>stdc++</LibName>
+        <LibPath/>
+        <OtherFlags>-nostartfiles -Xlinker  --gc-sections --specs=nano.specs --specs=nosys.specs -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek</OtherFlags>
+        <AutoLDFile>no</AutoLDFile>
+        <LinkType/>
+        <IncludeAllLibs>no</IncludeAllLibs>
+      </Linker>
+      <Debug>
+        <LoadApplicationAtStartup>yes</LoadApplicationAtStartup>
+        <Connector>OpenOCD</Connector>
+        <StopAt>yes</StopAt>
+        <StopAtText>main</StopAtText>
+        <InitFile>$(ProjectPath)/gdb.init</InitFile>
+        <AfterLoadFile/>
+        <AutoRun>yes</AutoRun>
+        <ResetType>Hard Reset</ResetType>
+        <SoftResetVal>0</SoftResetVal>
+        <ResetAfterLoad>no</ResetAfterLoad>
+        <AfterResetFile/>
+        <Dumpcore>no</Dumpcore>
+        <DumpcoreText/>
+        <ConfigICE>
+          <IP>localhost</IP>
+          <PORT>1025</PORT>
+          <CPUNumber>0</CPUNumber>
+          <Clock>12000</Clock>
+          <Delay>10</Delay>
+          <NResetDelay>100</NResetDelay>
+          <WaitReset>50</WaitReset>
+          <DDC>yes</DDC>
+          <TRST>no</TRST>
+          <DebugPrint>no</DebugPrint>
+          <Connect>Normal</Connect>
+          <ResetType>soft</ResetType>
+          <SoftResetVal>0</SoftResetVal>
+          <RTOSType>None</RTOSType>
+          <DownloadToFlash>no</DownloadToFlash>
+          <ResetAfterConnect>yes</ResetAfterConnect>
+          <GDBName/>
+          <GDBServerType>Local</GDBServerType>
+          <OtherFlags/>
+          <ICEEnablePCSampling>yes</ICEEnablePCSampling>
+          <ICESamplingFreq>1000</ICESamplingFreq>
+          <RemoteICEEnablePCSampling>no</RemoteICEEnablePCSampling>
+          <RemoteICESamplingPort>1026</RemoteICESamplingPort>
+          <Version>latest</Version>
+        </ConfigICE>
+        <ConfigSIM>
+          <SIMTarget/>
+          <OtherFlags/>
+          <NoGraphic>yes</NoGraphic>
+          <Log>no</Log>
+          <SimTrace>no</SimTrace>
+          <Version>latest</Version>
+        </ConfigSIM>
+        <ConfigOpenOCD>
+          <OpenOCDExecutablePath/>
+          <OpenOCDTelnetPortEnable>no</OpenOCDTelnetPortEnable>
+          <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
+          <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
+          <OpenOCDTclPort>6666</OpenOCDTclPort>
+          <OpenOCDConfigOptions>-f ../../../../../SoC/hbirdv2/Board/ddr200t/openocd_hbirdv2.cfg</OpenOCDConfigOptions>
+          <OpenOCDTimeout>5000</OpenOCDTimeout>
+          <PluginID>openocd-nuclei</PluginID>
+          <Version>latest</Version>
+        </ConfigOpenOCD>
+      </Debug>
+      <Flash>
+        <InitFile>$(ProjectPath)/flash.init</InitFile>
+        <Erase>Erase Sectors</Erase>
+        <Algorithms Path=""/>
+        <Program>no</Program>
+        <Verify>no</Verify>
+        <ResetAndRun>no</ResetAndRun>
+        <ResetType>Soft Reset</ResetType>
+        <SoftResetVal/>
+        <External>no</External>
+        <Command/>
+        <Arguments/>
+      </Flash>
+    </BuildConfig>
+  </BuildConfigs>
+</Project>
